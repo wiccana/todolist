@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TodoList/>
+    <TodoList v-bind:items="items"/>
   </div>
 </template>
 
@@ -12,6 +12,37 @@ export default {
   name: 'App',
   components: {
     TodoList
+  },
+  data() {
+    return {
+      items: [
+        {
+          id: 1,
+          title: 'Go workout',
+          completed: false
+        },
+        {
+          id: 2,
+          title: 'Do laundry',
+          completed: false
+        },
+        {
+          id: 3,
+          title: 'Cook food',
+          completed: false
+        },
+        {
+          id: 4,
+          title: 'Clean up room',
+          completed: false
+        },
+        {
+          i: 5,
+          title: 'Finish work',
+          completed: false
+        }
+      ],
+    }
   }
 }
 </script>

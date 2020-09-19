@@ -8,34 +8,29 @@
             <button @click="addItem" class="button is-primary">Agregar Tarea</button>
             
             <div id="list">
-
-              <div class="notification">
-                <button class="delete"></button>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </div>
-              <div class="notification">
-                <button class="delete"></button>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </div>
-              <div class="notification">
-                <button class="delete"></button>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </div>
-
+                 <div v-bind:key="item.id" v-for="item in items" class="notification">
+                    <button class="delete"></button>
+                    <Item v-bind:item="item" />
+                </div>
             </div>
 
     </div>
 </template>
 
 <script>
+import Item from './Item';
+
 export default {
   name: 'TodoList',
-  props: {
-    msg: String
+  components: {
+    Item
   },
+  props: [
+    "items"
+  ],
   methods: {
     addItem(){
-      console.log('adding item');
+      console.log("adding item");
     }
   }
 }
