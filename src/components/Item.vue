@@ -1,5 +1,9 @@
 <template>
-        <p>{{ item.description }}</p>   
+    <div>
+        <p>{{ item.description }}   
+        <button @click="$emit('delete-item',item.id)" class="delete"></button>
+        </p>
+    </div>
 </template>
 
 <script>

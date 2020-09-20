@@ -4,7 +4,7 @@
       
       <AddItem v-on:add-item="addItem"/>   <!-- add-item event calls addItem method -->
    
-      <TodoList v-bind:items="items"/>
+      <TodoList v-bind:items="items" v-on:delete-item="deleteItem"/>
   </div>
 </template>
 
@@ -27,6 +27,9 @@ export default {
   methods: {
     addItem(newItem){
       this.items.push(newItem);
+    },
+    deleteItem(itemId){
+      this.items = this.items.filter(item => item.id !== itemId);
     }
   }
 }

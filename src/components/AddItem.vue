@@ -9,7 +9,6 @@
 </template>
 
 <script>
-// import uuid from 'uuid';
 import { uuid } from 'vue-uuid';
 export default {
   name: 'AddItem',
