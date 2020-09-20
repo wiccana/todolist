@@ -1,6 +1,6 @@
 <template>
     <!-- <div> -->
-        <p>{{ item.title }}</p>
+        <p>{{ item.description }}</p>
         <!-- <button class="delete"></button> -->
     <!-- </div> -->
         

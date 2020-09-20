@@ -1,47 +1,53 @@
 <template>
-  <div id="app">
-    <TodoList v-bind:items="items"/>
+  <div id="app"  class="container is-fluid">
+      <h1 class="title is-1">Lista de Tareas</h1>
+      
+      <AddItem v-on:add-item="addItem"/>   <!-- add-item event calls addItem method -->
+   
+      <TodoList v-bind:items="items"/>
   </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList.vue'
+import AddItem from './components/AddItem.vue';
 import 'bulma/css/bulma.css'
 
 export default {
   name: 'App',
   components: {
-    TodoList
+    TodoList,
+    AddItem
   },
   data() {
     return {
       items: [
         {
           id: 1,
-          title: 'Go workout',
-          completed: false
+          description: 'Go workout'
         },
         {
           id: 2,
-          title: 'Do laundry',
-          completed: false
+          description: 'Do laundry'
         },
         {
           id: 3,
-          title: 'Cook food',
-          completed: false
+          description: 'Cook food'
         },
         {
           id: 4,
-          title: 'Clean up room',
-          completed: false
+          description: 'Clean up room'
         },
         {
-          i: 5,
-          title: 'Finish work',
-          completed: false
+          id: 5,
+          description: 'Finish work'
         }
       ],
+    }
+  },
+  methods: {
+    addItem(newItem){
+      this.items.push(newItem);
     }
   }
 }
