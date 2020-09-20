@@ -1,8 +1,8 @@
 <template>
   <div id="list">
-        <div v-bind:key="item.id" v-for="item in items" class="notification">
-          <button class="delete"></button>
-          <Item v-bind:item="item" />
+      <div v-bind:key="item.id" v-for="item in items" class="notification">
+        <button class="delete"></button>
+        <Item v-bind:item="item" />
       </div>
   </div>
 </template>
