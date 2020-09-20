@@ -1,9 +1,5 @@
 <template>
-    <!-- <div> -->
-        <p>{{ item.description }}</p>
-        <!-- <button class="delete"></button> -->
-    <!-- </div> -->
-        
+        <p>{{ item.description }}</p>   
 </template>
 
 <script>

@@ -1,9 +1,9 @@
 <template>
   <div>
     <input class="input is-primary" v-model="description" name="description" type="text" placeholder="Tarea...">
-    <p v-show="hasInputError" class="help has-text-left has-text-danger">This is a help text</p>
+    <p v-show="hasInputError" class="help has-text-left has-text-danger">La tarea no puede estar vacía!</p>
     
-    <button @click="addItem" class="button is-primary">Agregar Tarea</button>
+    <button id="addItem" @click="addItem" class="button is-primary">Agregar Tarea</button>
 
   </div>
 </template>
@@ -42,4 +42,7 @@ export default {
 </script>
 
 <style scoped>
+  #addItem{
+    margin-top: 20px;
+  }
 </style>

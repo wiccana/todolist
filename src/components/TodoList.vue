@@ -28,8 +28,5 @@ export default {
   #list {
     padding: 20px;
   }
-  .todo-item{
-    margin:  10px;
-    display: blocK;
-  }
+
 </style>

@@ -21,28 +21,7 @@ export default {
   },
   data() {
     return {
-      items: [
-        {
-          id: 1,
-          description: 'Go workout'
-        },
-        {
-          id: 2,
-          description: 'Do laundry'
-        },
-        {
-          id: 3,
-          description: 'Cook food'
-        },
-        {
-          id: 4,
-          description: 'Clean up room'
-        },
-        {
-          id: 5,
-          description: 'Finish work'
-        }
-      ],
+      items: [],
     }
   },
   methods: {
