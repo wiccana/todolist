@@ -1,24 +1,25 @@
 # todo
 
-## Project setup
+## Requirements
 ```
-npm install
+Node.js ≥10.x 
+npm ≥6.7 
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
 ### Compiles and minifies for production
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Build & Run
 ```
-npm run lint
+git clone https://github.com/wiccana/todolist.git
+cd todo
+npm run serve
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Made with
+```
+Vue 2
+Bulma
+vue-uuid
+```
