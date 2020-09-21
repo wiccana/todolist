@@ -5,11 +5,6 @@
 Node.js ≥10.x 
 npm ≥6.7 
 ```
-### Compiles and minifies for production
-```
-npm run build
-```
-
 ### Build & Run
 ```
 git clone https://github.com/wiccana/todolist.git
